@@ -8,13 +8,10 @@
                 switch(chance) {
                     case 1:
                         return "Rock";
-                        break;
                     case 2:
                         return "Paper";
-                        break;
                     case 3:
                         return "Scissors";
-                        break;
                     default: 
                         return "";
                 }
@@ -41,9 +38,9 @@
 
             function game() {
                 for (let i = 0; i < 5; i++) {
-                const playerSelection = prompt("What is your move?");
-                const computerSelection = computerPlay();
-                console.log(playRound(playerSelection, computerSelection));
+                    const playerSelection = prompt("What is your move?");
+                    const computerSelection = computerPlay();
+                    console.log(playRound(playerSelection, computerSelection));
                 }
             }
 
