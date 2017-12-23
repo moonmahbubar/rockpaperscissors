@@ -1,0 +1,56 @@
+
+
+body {
+    font-family: Roboto;
+    text-transform: uppercase;
+    background-color: #3F51B5;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    top: 50px;
+    color: black;
+    font-size: 70px;
+    margin: 0 auto;
+    width: 1000px;
+    position: relative;
+}
+
+
+button {
+    border-radius: 3px;
+    padding: 0px 20px;
+    height: 50px;
+    margin: 20px 7px;
+    position: relative;
+    border: 1px rgb(255, 255, 255);
+    color: rgb(37, 37, 37);
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(163, 161, 161, 0.548);
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgb(242,242,242);
+}
+
+#buttons {
+    clear: both;
+    position: relative;
+    top: 100px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    top: 30%;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 60px;
+
+}
+
+

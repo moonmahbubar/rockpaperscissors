@@ -1,3 +1,4 @@
+//computes the computers move;
 function computerPlay() {
     let min = 1;
     let max = 3;
@@ -14,6 +15,7 @@ function computerPlay() {
     }
 }
 
+//plays a round and decides the winner
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toUpperCase();
     computerSelection = computerSelection.toUpperCase();
@@ -32,6 +34,7 @@ function playRound(playerSelection, computerSelection) {
             return ((computerSelection == "PAPER") ? win: lose) + computerSelection;                }
 }
 
+//only to be used in console
 function game() {
     for (let i = 0; i < 5; i++) {
         const playerSelection = prompt("What is your move?");
@@ -39,3 +42,20 @@ function game() {
         console.log(playRound(playerSelection, computerSelection));
     }
 }
+
+
+//container
+const container = document.querySelector('.container');
+
+//the button/the move
+const move = document.querySelectorAll('button');
+
+//add event listener to all buttons;
+
+move.forEach(button => {
+    //e refers to the node being interacted with;
+    button.addEventListener('click', (e) => {
+        let result = playRound(e.target.id,computerPlay());
+        container.textContent = result;
+    })
+})
